@@ -1,0 +1,164 @@
+:root {
+    --museum-wall: #d6cdb2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--museum-wall);
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.text {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 3vw;
+}
+
+/* .press_here_replay {
+    position: absolute;
+    top: 15%;
+    left: 78%;
+} */
+
+.press_here {
+    position: absolute;
+    width: 10vw;
+    top: 15%;
+    left: 78%;
+}
+
+.press_arrow {
+    position: absolute;
+    top: 53%;
+    left: 84%;
+    transform: translate(-50%,-50%) scale(.5);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 71%;
+
+}
+
+
+
+.work_of_art {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 73%;
+    left: 63%;
+}
+
+#canvas1 {
+    border: 10px solid #dabf64;
+    /* outline: 20px solid #7c3e22; */
+    box-shadow:
+    0 0 0px 20px #7c3e22,
+    0 10px 15px 20px #000;
+    /* background: blue; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 480px;
+    height: 270px; */
+    width: 50vw;
+    height: 50vh;
+}
+
+#canvas2 {
+    /* border: 10px solid #dabf64; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* width: 100px; */
+    left: 33%;
+    top: 80%;    
+}
+
+#canvas3 {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+    
+    left: 50%;
+    top: 10.5%;    
+}
+
+#playerSprite,
+#playerSpriteShadow,
+#bgLayer1,
+#bgLayer2,
+#bgLayer3,
+#bgLayer4,
+#bgLayer5,
+#bground,
+#obsImg {
+    display: none;
+}
+
+.health {
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%) rotate(-90deg) scale(.8);
+    top: 40%;
+    left: 20%;
+    /* transform: translate(-50%,-50%); */
+}
+
+
+
+#lives {
+    position: absolute;
+    background-color: red;
+    
+    z-index: -2;
+    width: 325px;
+    height: 30px;
+    /* top: 35%; */
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: var(--museum-wall);
+
+    appearance: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#L_deco, #R_deco {
+    width: 50vw;
+    height: 50vh;
+    background-color: #000;
+    border: 10px solid #dabf64;
+    /* outline: 20px solid #7c3e22; */
+    box-shadow:
+    0 0 0px 20px #7c3e22,
+    0 10px 15px 20px #000;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%
+    
+}
+
+#L_deco {
+    left: -20%;
+}
+
+#R_deco {
+    left: 120%;
+    
+}
+
+
+

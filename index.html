@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Kalam:wght@400;700&family=Roboto+Mono:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Art World</title>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+    <div class="press_here_replay">
+        <p class="text press_here">Press here <br> to replay <br> whenever <br> you want ;)</p>
+        <img class="press_arrow" src="./Assets/arrow_here.png" alt="">
+        <button id="replay" onclick=location=URL ><img src="./Assets/replay.png" alt=""></button>
+    </div>
+
+    <canvas id="L_deco"></canvas>
+    <canvas id="R_deco"></canvas>
+    <div class="health">
+        <img src="./Assets/healthBar.png" id="livesBar" alt="">
+        <progress id="lives" value="50" max="50"></progress>
+    </div>
+    <div class="text work_of_art">"This is a work of Art"</div>
+    
+    <!-- Assets -->
+    <img id="bground"  src="./Assets/bground.png" alt="">
+    <img id="playerSprite" src="./Assets/W_sprite.png" alt="player">
+    <img id="playerSpriteShadow" src="./Assets/B_sprite.png" alt="shadow">
+    <img id="bgLayer1" src="./Assets/bg_sky.png" alt="">
+    <img id="bgLayer2" src="./Assets/babylon_tower.png" alt="">
+    <img id="bgLayer3" src="./Assets/bg_moutain.png" alt="">
+    <img id="bgLayer4" src="./Assets/stnight_tower.png" alt="">
+    <img id="bgLayer5" src="./Assets/base.png" alt="">
+    <img id="obsImg" src="./Assets/spikeObs.png" alt="">
+    <!-- ======================= -->
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+
+    <script src="./Assets/scriptMain.js"></script>
+</body>
+
+</html>
